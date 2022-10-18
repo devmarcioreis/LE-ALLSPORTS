@@ -410,9 +410,6 @@ img {
 .footer {
     border-top: 2px solid var(--le-color1);
 }
-.footer__container {
-    row-gap: 4rem;
-}
 .footer__logo, .footer__description {
     color: var(--first-color-gray);
 }
