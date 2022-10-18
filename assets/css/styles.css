@@ -430,17 +430,16 @@ img {
 .footer__description {
     margin-bottom: 1rem;
 }
-/* .footer__form {
-    flex-direction: column;
-    gap: 1.25rem;
-}
 .footer__input {
-    padding: 10px 56px 10px 24px;
+    padding: 10px;
     border-radius: 5px;
     border: 2px solid var(--le-color1);
     background: var(--transparent-color);
     color: var(--text-color);
-} */
+}
+.button {
+    margin-left: 10px;
+}
 .footer__messege {
     position: absolute;
     transform: translateY(1rem);
