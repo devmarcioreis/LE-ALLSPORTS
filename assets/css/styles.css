@@ -410,6 +410,9 @@ img {
 .footer {
     border-top: 2px solid var(--le-color1);
 }
+.footer__container {
+    row-gap: 4rem;
+}
 .footer__logo, .footer__description {
     color: var(--first-color-gray);
 }
@@ -446,10 +449,10 @@ img {
 .footer__content, .footer__links, .footer__group {
     display: grid;
 }
-.footer__content {
+/* .footer__content {
     grid-template-columns: repeat(2, max-content);
     gap: 2.5rem 3.5rem;
-}
+} */
 .footer__title {
     font-size: var(--h3-font-size);
     margin-bottom: 1rem;
