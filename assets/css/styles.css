@@ -430,7 +430,7 @@ img {
 .footer__description {
     margin-bottom: 1rem;
 }
-.footer__form {
+/* .footer__form {
     flex-direction: column;
     gap: 1.25rem;
 }
@@ -440,7 +440,7 @@ img {
     border: 2px solid var(--le-color1);
     background: var(--transparent-color);
     color: var(--text-color);
-}
+} */
 .footer__messege {
     position: absolute;
     transform: translateY(1rem);
@@ -449,10 +449,10 @@ img {
 .footer__content, .footer__links, .footer__group {
     display: grid;
 }
-/* .footer__content {
+.footer__content {
     grid-template-columns: repeat(2, max-content);
     gap: 2.5rem 3.5rem;
-} */
+}
 .footer__title {
     font-size: var(--h3-font-size);
     margin-bottom: 1rem;
