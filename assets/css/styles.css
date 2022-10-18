@@ -433,6 +433,8 @@ img {
 }
 .footer__form {
     width: 85%;
+    flex-direction: column;
+    gap: .5rem;
 }
 .footer__input {
     padding: 10px;
@@ -440,9 +442,6 @@ img {
     border: 2px solid var(--le-color1);
     background: var(--transparent-color);
     color: var(--text-color);
-}
-.button {
-    margin-left: 7px;
 }
 .footer__messege {
     position: absolute;
