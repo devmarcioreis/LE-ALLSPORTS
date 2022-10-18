@@ -76,7 +76,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: var(--bg-color);
+    background: var(--body-color);
     height: 100vh;
 }
 body, button, input {
@@ -162,7 +162,7 @@ img {
     font-weight: var(--font-bold);
 }
 .nav__logo img {
-    width: 4rem;
+    width: 5rem;
 }
 .nav__toggle {
     font-size: 1.5rem;
@@ -172,9 +172,8 @@ img {
 @media (max-width: 1024px) {
     .nav__menu {
         position: fixed;
-        background: inset -30px 30px 30px #010c15, inset -1px 5px 30px #2195f338;
+        background:  #000000d5;
         backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(32px);
         top: 0;
         right: -100%;
         width: 100%;
@@ -218,4 +217,68 @@ img {
 /*==========JavaScript==========*/
 .show-menu {
     right: 0;
+}
+
+/*==========Home==========*/
+.home {
+    position: relative;
+    padding-bottom: 0;
+}
+.home__container {
+    padding-top: 2.5rem;
+    row-gap: 2rem;
+}
+.home__data {
+    text-align: center;
+}
+.home__subtitle {
+    font-size: var(--bigger-font-size);
+    color: var(--le-color2);
+}
+.home__description {
+    margin-bottom: 1rem;
+    color: var(--title-color);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.button {
+    display: inline-block;
+    background: var(--le-color1);
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    cursor: pointer;
+    transition: background .3s;
+    transition: all .3s ease-in-out;
+}
+.button:hover {
+    background: var(--le-color2);
+}
+.button i {
+    font-size: 1.2rem;
+}
+.button__flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+}
+.home__triangle {
+    height: 500px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+.home__triangle-1 {
+    width: 370px;
+    background: url(../images/bg.jpg) no-repeat center/cover;
+}
+.home__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    margin: 0 auto;
 }
