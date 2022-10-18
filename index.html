@@ -10,6 +10,8 @@
     <meta name="keywords" contente="Portfolio, html, css, front-end, JavaScript, Desenvolvimento, React, React Native, Angular, NodeJS, Vue, Android, IOS, HTTP, SEO, Scrum, Bootstrap, Git, GitHub, Tailwind, Regex, QA, Php, TypeScript">
     <!--========Icon========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--========Swiper========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!--========CSS========-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <!--========JavaScript========-->
@@ -36,10 +38,10 @@
                         <a href="#novidades" class="nav__link"><i class="uil uil-pricetag-alt"></i> Novidades</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link"><i class="uil uil-user"></i> Sobre nós</a>
+                        <a href="#colections" class="nav__link"><i class="uil uil-gift"></i> Coleções</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#colecoes" class="nav__link"><i class="uil uil-gift"></i> Coleções</a>
+                        <a href="#about" class="nav__link"><i class="uil uil-user"></i> Sobre nós</a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link"><i class="uil uil-message"></i> Contato</a>
@@ -109,6 +111,61 @@
             </div>
         </section>
 
+        <!--========Colections========-->
+        <section class="colections section" id="colections">
+            <div class="section__data">
+                <h2 class="section__subtitle">Coleções</h2>
+                <div class="section__titles">
+                    <h1 class="section__title-border">2022</h1>
+                    <h1 class="section__title">2023</h1>
+                </div>
+            </div>
+            <section class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/images/img/colec1.png">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/images/img/colec2.png">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/images/img/colec3.png">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/images/img/colec4.png">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/images/img/colec5.png">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/images/img/colec6.png">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/images/img/colec7.png">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/images/img/colec8.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
         <!--========About========-->
         <section class="about section" id="about">
             <div class="about__overflow">
@@ -150,15 +207,6 @@
             </div>
         </section>
 
-        <!--========Pricing========-->
-        <section class="pricing section" id="pricing">
-            
-        </section>
-
-        <!--========Calculate========-->
-        <section class="calculate section">
-            
-        </section>
     </main>
 
     <!--========Footer========-->
@@ -174,5 +222,29 @@
 
     <!--========Email========-->
 
+
+
+    <!--========Swiper JS========-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!--========Swiper JS========-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
 </body>
 </html>
