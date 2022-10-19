@@ -33,3 +33,18 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 
+const scrollPage = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+})
+
+scrollPage.reveal(`.home__data`)
+scrollPage.reveal(`.home__img`, {delay: 700, origin: 'bottom'})
+scrollPage.reveal(`.program__card`, {interval: 100, origin: 'bottom'})
+scrollPage.reveal(`.colections`, {delay: 900, origin: 'top'})
+scrollPage.reveal(`.about__description`, {delay: 100, origin: 'top'})
+scrollPage.reveal(`.about__group`, {interval: 100, origin: 'bottom'})
+scrollPage.reveal(`.about__img`, {delay: 100, origin: 'left'})
+scrollPage.reveal(`.footer__container`, {delay: 100, origin: 'bottom'})
