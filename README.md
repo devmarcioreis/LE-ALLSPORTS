@@ -1,4 +1,5 @@
 # LE-ALLSPORTS
 Loja de camistas de times.<br>
 Projeto sendo iniciado: https://devmarcioreis.github.io/LE-ALLSPORTS/<br>
-Versão para celular 90% finalizado.
+
+![Captura de tela 2022-10-19 171213](https://user-images.githubusercontent.com/107413382/196794265-562ed0c4-031e-49bb-858f-28ce7a93564c.jpg)
