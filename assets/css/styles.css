@@ -336,11 +336,8 @@ img {
     align-items: center;
     flex-direction: column;
     width: 20em;
-    height: 85%;
     border-radius: 1em;
-    box-shadow: 15px 12px 50px rgba(0, 0, 0, 0.3);
     background: var(--body-color);
-    border: 2px solid var(--le-color2);
     padding: 2em 1em;
     margin: 0 2em;
 }
@@ -348,7 +345,8 @@ img {
     filter: blur(3px);
 }
 .card__image img {
-    width: 170px;
+    box-shadow: 2px 2px 0 #055779, -2px -2px #0D9198;
+    width: 100%;
 }
 
 /*==========About==========*/

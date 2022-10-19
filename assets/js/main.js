@@ -31,3 +31,23 @@ const scrollHeader = () => {
     this.scrollY >= 50 ? header.classList.add('scroll-header') : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+const contactForm = document.querySelector('#contact-form')
+const contactMessege = document.querySelector('#contact-messege')
+const contactUser = document.querySelector('#contact-user')
+
+const sendEmail = e => {
+    e.preventDefault();
+
+    if(contactUser.value === '') {
+        contactMessege.textContent = 'Você deve digitar seu e-mail'
+
+        setTimeout( () => {
+            contactMessege.textContent = ''
+        }, 3000)
+    } else {
+        emailjs.sendForm('', '', '', '')
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
