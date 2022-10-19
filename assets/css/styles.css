@@ -128,6 +128,15 @@ img {
 .main {
     overflow: hidden;
 }
+.btn__flex {
+    margin-top: 10px;
+    background: var(--le-color2);
+    padding: 5px;
+    color: var(--title-color);
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 
 /*==========Header==========*/
 .header {
@@ -192,6 +201,9 @@ img {
 }
 .nav__link:hover {
     color: var(--le-color2);
+}
+.info-contact {
+    font-size: .9rem;
 }
 .nav__close {
     color: var(--title-color);
@@ -329,7 +341,6 @@ img {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 30em;
 }
 .card {
     display: flex;
@@ -337,7 +348,6 @@ img {
     flex-direction: column;
     width: 20em;
     border-radius: 1em;
-    background: var(--body-color);
     padding: 2em 1em;
     margin: 0 2em;
 }
@@ -345,7 +355,7 @@ img {
     filter: blur(3px);
 }
 .card__image img {
-    box-shadow: 2px 2px 0 #055779, -2px -2px #0D9198;
+    box-shadow: 2px 2px 0 #055779, -2px -2px 0 #0D9198;
     width: 100%;
 }
 
@@ -412,39 +422,22 @@ img {
 .footer__container {
     row-gap: 4rem;
 }
+.footer__top {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 .footer__logo, .footer__description {
     color: var(--first-color-gray);
-}
-.footer__logo, .footer__form, .footer__social {
-    display: flex;
-}
-.footer__logo {
-    align-items: center;
-    column-gap: .5rem;
-    margin-bottom: 1.5rem;
 }
 .footer__logo img {
     width: 5rem;
 }
+.footer__social p {
+    color: var(--first-color-gray);
+}
 .footer__description {
     margin-bottom: 1rem;
-}
-.footer__form {
-    width: 85%;
-    flex-direction: column;
-    gap: .5rem;
-}
-.footer__input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid var(--le-color1);
-    background: var(--transparent-color);
-    color: var(--text-color);
-}
-.footer__messege {
-    position: absolute;
-    transform: translateY(1rem);
-    color: var(--first-color-gray);
 }
 .footer__content, .footer__links, .footer__group {
     display: grid;
@@ -468,7 +461,7 @@ img {
     color: var(--le-color2);
 }
 .footer__group {
-    margin-top: 5rem;
+    margin-top: 2rem;
     justify-items: center;
     row-gap: 2rem;
 }
