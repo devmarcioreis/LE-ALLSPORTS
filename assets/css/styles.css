@@ -490,3 +490,17 @@ img {
     color: var(--le-color2);
     font-weight: 900;
 }
+
+/*==========Scroll Bar==========*/
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background: #272825;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--le-color2);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--le-color1);
+}
